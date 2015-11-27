@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="animate.css">
+
+	<style>
+
+	body {
+		background-color: cadetblue;
+	}
+
+	.snowflake {
+		color: white;
+		position: absolute;
+		animation: snow 10s linear infinite;
+	}
+
+	@keyframes snow {
+		0% {
+			top: 0;
+		}
+		
+		10%, 50%, 90% {
+			margin-left: 100px;
+			color: tomato;
+		}
+
+		50% 60%, 80% {
+			margin-left: 0;
+			color: purple;
+		}
+		100% {
+			top: 100%;
+		}
+	}
+
+	.mybox {
+		background-color: green;
+		width: 200px;
+		height: 300px;
+	}
+	</style>
+</head>
+<body>
+	<div class="snowflake snowflake1">&#10052;</div>
+	<div class="mybox animated hinge infinite"></div>
+</div>
+</body>
+</html>
